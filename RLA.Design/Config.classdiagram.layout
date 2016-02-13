@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Config">
+  <logicalClassDesignerModelMoniker Id="5f180c84-3961-4299-8490-40424cfeda23" />
+  <nestedChildShapes>
+    <packageShape Id="a3b7cdd1-70c1-4807-ad0a-872122854191" absoluteBounds="0.625, 1.625, 6.375, 5.5" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="74f98a98-5e0a-4450-9f12-91a23d379ab5" LastKnownName="RLA.Model" />
+      <nestedChildShapes>
+        <classShape Id="db9d6eca-9bbb-4d58-b2f0-4296721f5aed" absoluteBounds="0.875, 2.125, 1.875, 1.6210677083333338" hideQualifiedName="false" increaseHeight="0.20650390625" customColor="181, 193, 223">
+          <classMoniker Id="a5ad512d-252f-48f6-8a2e-ed5e12ddabc5" LastKnownName="Route" />
+          <nestedChildShapes>
+            <AttributeElementListCompartment Id="273d25a9-e298-4dd6-8d89-1afb50a40c0e" absoluteBounds="0.8899999999999999, 2.6526692708333335, 1.8450000000000002, 0.75708007812500011" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+            <OperationElementListCompartment Id="fb8b51bf-7489-4d3b-a2c8-5835cc612562" absoluteBounds="0.8899999999999999, 3.4197493489583337, 1.8450000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </classShape>
+      </nestedChildShapes>
+    </packageShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

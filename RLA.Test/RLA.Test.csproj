@@ -55,6 +55,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.XML" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -74,6 +75,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RLA.Common\RLA.Common.csproj">
+      <Project>{f6d46149-c63a-4f1f-af8c-206bd128f678}</Project>
+      <Name>RLA.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RLA.Model\RLA.Model.csproj">
+      <Project>{c8f4cc56-d57b-46d5-a53b-f72ee9d99bdb}</Project>
+      <Name>RLA.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RLA.Service\RLA.Service.csproj">
+      <Project>{7a163b34-9c06-4d25-b373-bdb0d15ee046}</Project>
+      <Name>RLA.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
