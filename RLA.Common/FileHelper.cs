@@ -2,11 +2,22 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace RLA.Common
 {
     public class FileHelper
     {
+        #region 获取根目录
+        public static string GetRootDir(string RootName)
+        {
+            string dir = System.AppDomain.CurrentDomain.BaseDirectory;
+            const string patern = @".+RouteLogAnalyzer";
+            Match mc = Regex.Match(dir, patern);
+            return mc.ToString()+RootName;
+        }
+        #endregion
+
         #region 写文件
         protected void Write_Txt(string FileName, string Content)
         {

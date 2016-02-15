@@ -5,6 +5,9 @@ using RLA.Model;
 using RLA.Service;
 using System.IO;
 using System.Xml;
+using System.Xml.Linq;
+using System.Linq;
+using System.Text.RegularExpressions;
 namespace RLA.Test
 {
     [TestFixture]
@@ -13,9 +16,17 @@ namespace RLA.Test
         [Test]
         public void TestMethod1()
         {
-            string dir = System.AppDomain.CurrentDomain.BaseDirectory;
-            var x = XMLHelper.GetXmlNodeListByXpath("RouteConfig.xml", "");
+            XDocument doc = XDocument.Load(FileHelper.GetRootDir(@"\XML\RouteConfig.xml"));
+            var x = doc.Descendants();
+            var y = from everything in x select everything.Value;
             Assert.IsNotNull(x);
+        }
+        [Test]
+        public void TestMethod2()
+        {
+            string dir = @"\Xml\RouteConfig.xml";
+            var actual = FileHelper.GetRootDir(dir);
+            Assert.AreEqual(@"D:\PopoProject\RouteLogAnalyzer\Xml\RouteConfig.xml", actual);
         }
     }
 }
