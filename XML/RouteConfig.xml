@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RouteConfig xmlns="http://tempuri.org/RouteConfig.xsd">
+  <router>
+    <type>1</type>
+    <device ismain="1">
+      <ip>ip1</ip>
+    </device>
+    <device ismain="-2147483647">
+      <ip>ip2</ip>
+    </device>
+    <device ismain="2147483647">
+      <ip>ip3</ip>
+    </device>
+  </router>
+  <router>
+    <type>-2147483647</type>
+    <device ismain="0">
+      <ip>ip4</ip>
+    </device>
+    <device ismain="2">
+      <ip>ip5</ip>
+    </device>
+    <device ismain="-2147483646">
+      <ip>ip6</ip>
+    </device>
+  </router>
+  <router>
+    <type>2147483647</type>
+    <device ismain="2147483646">
+      <ip>ip7</ip>
+    </device>
+    <device ismain="-1">
+      <ip>ip8</ip>
+    </device>
+    <device ismain="3">
+      <ip>ip9</ip>
+    </device>
+  </router>
+</RouteConfig>
